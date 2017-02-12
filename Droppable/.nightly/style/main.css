@@ -1,0 +1,371 @@
+/* animations */
+
+@keyframes SlideToCenter {
+	from { position: absolute; transform: translateY(-100vh); }
+	to { position: absolute; transform: translateY(0vh); }
+}
+
+@keyframes Diminish {
+	from { transform: scale(1.0); }
+	to { transform: scale(0.0); }
+}
+
+/* main */
+
+html {
+	font-family: Segoe UI, Tahoma;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2.25vmax;
+	min-font-size: 2.25vmax;
+	padding-bottom: 1vh;
+}
+
+h2 {
+	font-size: 2vmax;
+	min-font-size: 2vmax;
+}
+
+h3 {
+	font-size: 1.65vmax;
+	min-font-size: 1.65vmax;
+	margin-bottom: 1.5vh;
+}
+
+h4 {
+	font-size: 1.35vmax;
+	min-font-size: 1.35vmax;
+}
+
+h5 {
+	font-size: 1.15vmax;
+	min-font-size: 1.15vmax;
+}
+
+h6 {
+	font-size: 0.95vmax;
+	min-font-size: 0.95vmax;
+}
+
+p {
+	font-size: 0.85vmax;
+	min-font-size: 0.85vmax;
+}
+
+p#smalltext {
+	font-size: 0.6vmax;
+}
+
+i {
+	font-style: italic;
+}
+
+small {
+	font-size: 0.7vmax;
+}
+
+#logo, #downloadimg, #updatesimg, .settingsimg, #infoimg {
+	width: 2.6vw;
+	height: 2.6vw;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex: 1;
+
+	overflow-y: none;
+
+	flex-direction: column;
+
+	background-color: rgb(15, 15, 15);
+}
+
+body>header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 0 1 auto;
+
+	cursor: default;
+
+	background-color: rgb(35, 35, 35);
+
+	z-index: 0;
+}
+
+body>header>ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body>header>ul>li>div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 45vw;
+
+	margin: 2vh 0.75vw 1.75vh 0.75vw;
+}
+
+body>header>ul>li>div>div {
+	display: flex;
+}
+
+body>header>ul>li>div>div>h1 {
+	/*color: rgb(100, 225, 100);*/
+	color: rgb(25, 150, 255);
+}
+
+body>header>ul>li>div>h6 {
+	color: white;
+	font-family: 'Signika', sans-serif !important;
+}
+
+body>header>ul>li>nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 25vw;
+
+	color: white;
+
+	margin: 2vh 0.75vw 1.75vh 0.75vw;
+}
+
+body>header>ul>li>nav>ul {
+	display: flex;
+}
+
+body>header>ul>li>nav>ul>li {
+	transform: scale(1.0);
+	transition: transform .8s ease-in-out;
+}
+
+body>header>ul>li>nav>ul>li:hover {
+	transform: scale(1.1);
+}
+
+.infopanel {
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: rgb(25, 125, 225);
+	color: white;
+
+	padding: 0.5vh 0 0.5vh 0;
+}
+
+.infopanel>div {
+	display: flex;
+	align-items: center;
+}
+
+.infopanel>div>img {
+	margin: 0 0.25vh 0 0.5vh;
+}
+
+.infopanel>div>p {
+	margin-left: 0.25vh;
+	font-size: 0.9vmax !important;
+
+	margin-bottom: 0.25vh;
+}
+
+.infopanel>img {
+	cursor: pointer;
+
+	width: 24px;
+	height: 24px;
+
+	margin-right: 0.5vh;
+}
+
+.settingsimg {
+	transform: rotate(0deg);
+	transition: transform 1.25s ease-in-out;
+}
+
+.settingsimg:hover {
+	transform: rotate(360deg);
+}
+
+#settingsform {
+	display: flex;
+	flex-direction: column;
+
+	width: 90vw;
+	height: 75vh;
+
+	background-color: rgb(35, 35, 35);
+	padding: 1vh 0.75vw 1vh 0.75vw;
+}
+
+form>article {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+	height: 100%;
+}
+
+form>article>header {
+	display: flex;
+	flex: 0 1 auto;
+
+	align-items: center;
+}
+
+form>article>section {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+
+	margin: 1.5vh 0 1.5vh 0;
+	padding: 3vh 2vw 3vh 2vw;
+	background-color: rgb(25, 25, 25);
+}
+
+input[type="checkbox"] {
+	outline: none !important;
+}
+
+form>article>section>label {
+	font-size: 0.85vmax;
+	outline: none;
+	margin-bottom: 0.5vh;
+	margin-top: 0.5vh;
+}
+
+form>article>footer {
+	display: flex;
+	flex: 0 1 4vh;
+
+	align-items: center;
+	justify-content: flex-end;
+}
+
+form>article>footer>div>input, form>article>footer>div>button {
+	font-size: 0.85vmax;
+	cursor: default;
+	outline: none;
+
+	padding: 1vh 0.5vw 1vh 0.5vw;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	transition: background-color 0.5s ease-in-out;
+}
+
+form>article>footer>div>input:hover, form>article>footer>div>button:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+form>article>footer>div>input:active, form>article>footer>div>button:active {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+body>main {
+	display: flex;
+
+	z-index: 0;
+}
+
+#settings {
+	color: white;
+
+	z-index: -1;
+}
+
+#settings, body>main {
+	flex: 1 1 auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+body>main>div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+	cursor: default;
+}
+
+body>main h2, body>main h3, body>main h4, body>main h4, body>main h5, body>main h6, body>main small {
+	margin: 0.25vh 0;
+}
+
+#dragger {
+	color: rgb(180, 180, 180);
+
+	transform: scale(1.0);
+	transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+#dragger:hover {
+	transform: scale(1.1);
+	color: white;
+}
+
+body>footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 0 1 8vh;
+
+	cursor: default;
+
+	background-color: rgb(35, 35, 35);
+
+	z-index: 0;
+}
+
+body>footer>div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	color: whitesmoke;
+}
+
+body>footer>div>p {
+	margin-top: 0.75vh;
+}
+
+body>footer>div>ul {
+	margin-bottom: 0.75vh;
+	display: flex;
+	justify-content: space-around;
+
+	width: 75vw;
+}
+
+::selection {
+	/*color: rgba(0, 0, 0, 0.5);*/
+}
+
+.debug {
+	border: 1px solid red;
+}

@@ -1,0 +1,338 @@
+/*
+ * Main cascading style sheet file for my Taitaja 2016 website.
+ * (C) Jere Tapaninen 2015
+ * All Rights Reserved
+ */
+
+/* we use pacifico for the title */
+@import url(https://fonts.googleapis.com/css?family=Pacifico); 
+/* we use PT Sans for everything else */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic);
+
+h1, h2, h3, h4, h5, h6, b, strong {
+	font-weight: bold;
+}
+
+/* everything but not H1, the title */
+*:not(h1) {
+	font-family: 'PT Sans', sans-serif;
+}
+
+/* 
+ * should we use vmax shitterino or not? I wonder...
+ * or maybe we should just stick to media queries 
+ */
+
+/* This is the title. It should appear ONLY ONCE in the HTML. */
+h1 {
+	font-family: 'Pacifico', sans-serif;
+	font-size: 7.5vmin;
+}
+
+h2 {
+	font-size: 4vmin;
+}
+
+h3 {
+	font-size: 3.6vmin;
+}
+
+h4 {
+	font-size: 3.2vmin;
+}
+
+h5 {
+	font-size: 2.8vmin;
+}
+
+h6 {
+	font-size: 2vmin;
+}
+
+p {
+	font-size: 1.5vmin;
+}
+
+/* body stuff */
+
+html, body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+body {
+	/*flex-grow: ;
+	position: relative;*/
+	background-color: rgb(245, 245, 245);
+}
+
+header {
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+
+	background: url('../content/paaseisonta.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+header>div {
+	background-color: rgba(127, 84, 23, 0.4);
+
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+}
+
+header>div>div {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	align-items: center;
+	justify-content: center;
+
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    cursor: default;
+}
+
+header>div>nav {
+	background-color: white;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: flex-end;
+	width: 100%;
+}
+
+header>div>nav>ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	border-bottom: 0.2vmin solid lightgray;
+	border-top: 0.2vmin solid lightgray;
+}
+
+header>div>nav>ul li {
+	flex: 1;
+	text-align: center;
+
+	padding: 2vh 0;
+	cursor: pointer;
+
+	font-size: 1.75vmin;
+
+	transition: background-color 0.3s;
+}
+
+header>div>nav>ul li:not(.current):hover {
+	background-color: rgb(235, 235, 235);
+}
+
+header>div>nav>ul li:not(.current):active {
+	background-color: rgb(210, 210, 210);
+}
+
+#logo {
+	width: 30vmin;
+
+	margin: 0 0 3vh 0;
+}
+
+#title {
+	color: white;
+	letter-spacing: 0.5vw;
+	margin-bottom: 1vh;
+	-webkit-text-stroke: 0.2vmin black;
+
+    text-shadow:
+    0.4vmin 0.4vmin 0 #000,
+    -0.15vmin -0.15vmin 0 #000,  
+    0.15vmin -0.15vmin 0 #000,
+    -0.15vmin 0.15vmin 0 #000,
+    0.15vmin 0.15vmin 0 #000;
+}
+
+#subtitle {
+	letter-spacing: 0.05vw;
+	color: white;
+	margin-top: 1vh;
+    text-shadow:
+    0.15vmin 0.15vmin 0 #000,
+    -0.15vmin -0.15vmin 0 #000,  
+    0.15vmin -0.15vmin 0 #000,
+    -0.15vmin 0.15vmin 0 #000,
+    0.15vmin 0.15vmin 0 #000;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+main>article:not(#gallery) {
+	flex: 1;
+	height: 100%;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main>article#gallery {
+	flex: 1;
+	height: 125%;
+	min-height: 125%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main>article>h2 {
+	margin: 0 0 4vh 0;
+
+}
+
+main>article>div {
+	/*flex: 1;*/
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: 4vh 0 0 0;
+
+	cellpadding: 1vh;
+}
+
+table {
+	border-collapse: collapse;
+
+	background-color: white;
+	border: 0.2vmin solid rgb(220, 220, 220);
+
+	width: 50vw;
+	font-size: 1.7vmin;
+
+}
+
+table tr {
+	background-color: white;
+}
+
+table tr.open {
+	cursor: pointer;
+}
+
+table tr.closed {
+	cursor: not-allowed;
+}
+
+table tr.open:hover {
+	background-color: rgba(25, 225, 25, 0.5);
+}
+
+table tr.open:active {
+	background-color: rgba(25, 225, 25, 0.75);
+}
+
+table tr.closed:hover {
+	background-color: rgba(225, 25, 25, 0.5);
+}
+
+table tr td {
+	padding: 2vh 1.5vw;
+	text-align: center;
+}
+
+table tr th {
+	padding: 2vh 1.5vw;
+	font-size: 1.8vmin !important;
+}
+
+table tr th {
+	border-bottom: 0.2vmin solid rgb(220, 220, 220);
+	font-weight: bold;
+}
+
+article p {
+	font-size: 2.4vmin;
+	line-height: 3.5vmin;
+	letter-spacing: 0.025vmin;
+
+	margin: 0 0 2vh 0;
+
+	text-align: center;
+
+	width: 60%;
+}
+
+footer {
+	border-top: 0.2vmin solid lightgray;
+	background-color: rgb(214, 172, 20);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	margin-top: 25%;
+	height: 25%;
+	min-height: 25%;
+}
+
+.current {
+	background-color: rgb(210, 210, 210);
+	font-weight: bold;
+	color: rgb(70, 70, 70);
+}
+
+#imagegallery {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	/*align-content: stretch;*/
+
+	width: 75vw;
+}
+
+#imagegallery li {
+
+}
+
+#imagegallery li img {
+	margin: 2vh 2vw;
+	height: 30vh;
+
+	cursor: pointer;
+
+	transition: width 0.25s, height 0.25s;
+}
+
+#imagegallery li img:hover {
+	height: 33vh;
+}
+
+/* for debugging */
+
+.debug {
+	border: 0.2vmin solid red;
+}

@@ -1,0 +1,3 @@
+NETTISIVUT EIVÄT TOIMI NYKYISIN, sillä Chromeen on tullut päivityksiä. Tämä on tehty vuonna 2015 syksyllä, ja en ole päivittänyt tätä sen jälkeen, sillä tämä oli simppeli Taitaja-semifinaali ennakkotehtävä. Myöskään tietokantaa ei ole nykyisin enään toiminnassa.
+
+Voitte kuitenkin katsoa vielä koodia ihan hyvin.

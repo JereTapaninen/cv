@@ -1,0 +1,13 @@
+c:\VS\Droppable\Droppable\Droppable\bin\Debug\Droppable.exe.config
+c:\VS\Droppable\Droppable\Droppable\bin\Debug\Droppable.exe
+c:\VS\Droppable\Droppable\Droppable\bin\Debug\Droppable.pdb
+c:\VS\Droppable\Droppable\Droppable\obj\Debug\Droppable.Properties.Resources.resources
+c:\VS\Droppable\Droppable\Droppable\obj\Debug\Droppable.csproj.GenerateResource.Cache
+c:\VS\Droppable\Droppable\Droppable\obj\Debug\Droppable.exe
+c:\VS\Droppable\Droppable\Droppable\obj\Debug\Droppable.pdb
+c:\VS\Droppable\Droppable\Droppable\obj\Debug\Droppable.frmMain.resources
+c:\VS\Droppable\Droppable\Droppable\obj\Debug\Droppable.frmDownloader.resources
+c:\VS\Droppable\Droppable\Droppable\obj\Debug\Droppable.csprojResolveAssemblyReference.cache
+c:\VS\Droppable\Droppable\Droppable\obj\Debug\Droppable.frmEngineCheck.resources
+c:\VS\Droppable\Droppable\Droppable\bin\Debug\Settings.ini
+c:\VS\Droppable\Droppable\Droppable\obj\Debug\Droppable.frmSettings.resources

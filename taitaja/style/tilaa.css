@@ -1,0 +1,225 @@
+/*
+ * Main cascading style sheet file for my Taitaja 2016 website.
+ * (C) Jere Tapaninen 2015
+ * All Rights Reserved
+ */
+
+/* we use pacifico for the title */
+@import url(https://fonts.googleapis.com/css?family=Pacifico); 
+/* we use PT Sans for everything else */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic);
+
+h1, h2, h3, h4, h5, h6, b, strong {
+	font-weight: bold;
+}
+
+/* everything but not H1, the title */
+*:not(h1) {
+	font-family: 'PT Sans', sans-serif;
+}
+
+/* 
+ * should we use vmax shitterino or not? I wonder...
+ * or maybe we should just stick to media queries 
+ */
+
+/* This is the title. It should appear ONLY ONCE in the HTML. */
+h1 {
+	font-family: 'Pacifico', sans-serif;
+	font-size: 7.5vmin;
+	color: white;
+}
+
+h1#logotext {
+	font-size: 3vmin !important;
+}
+
+h2 {
+	font-size: 4vmin;
+}
+
+h3 {
+	font-size: 3.6vmin;
+}
+
+h4 {
+	font-size: 3.6vmin;
+}
+
+h5 {
+	font-size: 2.8vmin;
+}
+
+h6 {
+	font-size: 2vmin;
+}
+
+p {
+	font-size: 1.5vmin;
+}
+
+html, body {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-between;
+
+	height: 100%;
+}
+
+#logoimage {
+	width: 8vmin !important;
+	height: 6vmin;
+}
+
+header {
+	/*position: relative;*/
+	background-color: rgba(180, 255, 0, 0.7);
+
+	padding: 1vh 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-around;
+}
+
+header>div {
+	flex: 1 1;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+
+	margin: 1vh 0;
+}
+
+header>div>div {
+	flex: 1 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	color: rgb(60, 60, 60);
+
+	flex: 1 1 auto;
+
+	padding: 4vmin 2vmin;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgba(100, 240, 0, 0.25);
+}
+
+#logotext {
+	letter-spacing: 0.05vw;
+
+	-webkit-text-stroke: 0.05vmin black;
+
+    text-shadow:
+    0.1vmin 0.1vmin 0 #000,
+    -0.05vmin -0.05vmin 0 #000,  
+    0.05vmin -0.05vmin 0 #000,
+    -0.05vmin 0.05vmin 0 #000,
+    0.05vmin 0.05vmin 0 #000;
+}
+
+#subtitle {
+	color: white;
+	-webkit-text-stroke: 0.1vmin black;
+}
+
+footer {
+	flex: 0 1 4vh;
+
+	display: flex;
+
+	background-color: rgba(180, 255, 0, 0.7);
+
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	background-color: white;
+
+	width: 50vmin;
+
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	padding: 2vmin 4vmin;
+	border: 0.15vmax solid rgba(0, 0, 0, 0.25);
+	border-radius: 1vmax;
+}
+
+form>div:not(#last) {
+	margin: 2vh 0;
+	padding: 2vh 0;
+
+	border: 0.1vmax solid rgba(0, 0, 0, 0.25);
+	border-radius: 0.25vmax;
+}
+
+form>div>div:not(#last) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 1vh 2vw;
+
+	font-size: 1.5vmin;
+}
+
+form>div>div>label {
+	font-weight: bold;
+}
+
+#last {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 2vh 2vw;
+
+	font-size: 1.5vmin;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+	border: 0.1vmax solid rgb(170, 170, 170);
+
+	padding: 0.25vmin 0.5vmin;
+
+	text-align: right;
+}
+
+button, input[type="submit"] {
+	margin: 0 1vmin;
+	padding: 1vmin 2vmin;
+
+	background-color: rgba(215, 215, 215, 1);
+
+	transition: background-color 0.25s;
+
+	outline: none;
+
+	cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+	background-color: rgba(225, 225, 225, 1);
+}
+
+button:active, input[type="submit"]:active {
+	background-color: rgba(200, 200, 200, 1);
+}

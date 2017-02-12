@@ -1,0 +1,101 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html {
+	overflow-y: none;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex: 0 1 20vh;
+}
+
+main {
+	background-color: rgb(250, 250, 250);
+
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+}
+
+main#container {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding: 2vh 2vh;
+}
+
+footer {
+	flex: 0 1 20vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+
+	padding-bottom: 2vh;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 4vmax;
+
+	text-shadow: 4px 4px gray;
+}
+
+h2 {
+	font-size: 2.5vmax;
+
+	margin-bottom: 2.5vh;
+}
+
+h3 {
+	font-size: 1.8vmax;
+
+	margin-bottom: 2vh;
+}
+
+h4 {
+	font-size: 1.8vmax;
+
+	margin-bottom: 2.5vh;
+}
+
+h5 {
+	font-size: 1.3vmax;
+
+	margin-bottom: 2vh;
+}
+
+h6 {
+	font-size: 1.05vmax;
+}
+
+p {
+	font-size: 0.85vmax;
+}
+
+p#copyright {
+	text-align: center;
+}

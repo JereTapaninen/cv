@@ -1,0 +1,337 @@
+/* 
+ * CSS FILE
+ * MADE BY JERE TAPANINEN 2015
+ * ALL RIGHTS RESERVED
+ */
+ 
+/* ANIMATIONS */
+
+@keyframes ToFront {
+	from { transform: scale(0.0) rotate(180deg); }
+	to { transform: scale(1.0) rotate(0deg); }
+}
+
+@keyframes ToBack {
+	from { transform: scale(1.0) rotate(0deg); }
+	to { transform: scale(0.0) rotate(-180deg); }
+}
+
+@keyframes SlideToFront {
+	from { transform: translateX(-100vw); }
+	to { transform: translateX(0vw); }
+}
+
+@keyframes SlideOut {
+	from { transform: translateX(0vw); }
+	to { transform: translateX(100vw); }
+}
+
+/* END OF ANIMATIONS */
+ 
+* {
+	font-family: 'Open Sans', Verdana, Tahoma, Arial, Times New Roman;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+html.white {
+	background-color: whitesmoke;
+	color: black;
+}
+
+html.black {
+	background-color: rgba(30, 30, 30, 1);
+	color: whitesmoke;
+}
+
+html.red {
+	background-color: rgba(200, 100, 100, 1);
+	color: whitesmoke;
+}
+
+html.green {
+	background-color: rgba(140, 200, 140, 1);
+	color: rgba(20, 20, 20, 1);
+}
+
+html.yellow {
+	background-color: rgba(220, 220, 120, 1);
+	color: rgba(50, 50, 50, 1);
+}
+
+html.blue {
+	background-color: rgba(100, 150, 255, 1);
+}
+
+body {
+	/*animation: ToFront 0.5s;*/
+}
+
+body.white {
+
+}
+
+header {
+	padding-top: 12vh;
+}
+
+header.white {
+
+}
+
+header div#logoholder {
+	text-align: center;
+}
+
+header div#logoholder img#logo {
+	height: 35vh;
+}
+
+header h1#title {
+	text-align: center;
+	margin: 4vh 0 8vh 0;
+	line-height: 1;
+	cursor: default;
+}
+
+header nav[role="navigation"] {
+	width: 100%;
+	display: table;
+}
+
+header nav[role="navigation"] ul {
+	display: table-row;
+}
+
+header nav[role="navigation"] ul li {
+	display: table-cell;
+	width: auto;
+	text-align: center;
+	cursor: pointer;
+	padding: 2.75vh 0 2.75vh 0;
+	font-size: 0.95vmax;
+	letter-spacing: 0.075vw;
+	transition: background-color 0.35s;
+}
+
+header.white nav[role="navigation"] ul li {
+	color: rgba(60, 60, 60, 1);
+	background-color: rgba(0, 0, 0, 0.065);
+}
+
+header.white nav[role="navigation"] ul li:hover {
+	background-color: rgba(0, 0, 0, 0.01);
+}
+
+header.white nav[role="navigation"] ul li:active {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+header.black nav[role="navigation"] ul li {
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+header.black nav[role="navigation"] ul li:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+header.black nav[role="navigation"] ul li:active {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+header.red nav[role="navigation"] ul li {
+	background-color: rgba(0, 0, 0, 0.06);
+}
+
+header.red nav[role="navigation"] ul li:hover {
+	background-color: rgba(0, 0, 0, 0.005);
+}
+
+header.red nav[role="navigation"] ul li:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+header.green nav[role="navigation"] ul li {
+	background-color: rgba(0, 0, 0, 0.06);
+	color: white;
+}
+
+header.green nav[role="navigation"] ul li:hover {
+	background-color: rgba(0, 0, 0, 0.005);
+}
+
+header.green nav[role="navigation"] ul li:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+header.yellow nav[role="navigation"] ul li {
+	background-color: rgba(0, 0, 0, 0.04);
+}
+
+header.yellow nav[role="navigation"] ul li:hover {
+	background-color: rgba(0, 0, 0, 0.005);
+}
+
+header.yellow nav[role="navigation"] ul li:active {
+	background-color: rgba(0, 0, 0, 0.125);
+}
+
+header.blue nav[role="navigation"] ul li {
+	background-color: rgba(0, 0, 0, 0.025);
+}
+
+header.blue nav[role="navigation"] ul li:hover {
+	background-color: rgba(0, 0, 0, 0.001);
+}
+
+header.blue nav[role="navigation"] ul li:active {
+	background-color: rgba(0, 0, 0, 0.125);
+}
+
+footer {
+	padding: 2vh 0 1vh 0;
+}
+
+footer.white {
+
+}
+
+footer.green {
+	background-color: rgba(0, 0, 0, 0.06);
+	color: white;
+}
+
+footer p#copyright {
+	text-align: center;
+}
+
+div#container {
+	padding: 6vh 0 8vh 0;
+}
+
+div#container.white {
+	background-color: white;
+}
+
+div#container.black {
+	background-color: rgba(255, 255, 255, 0.20);
+}
+
+div#container.red {
+	background-color: rgba(255, 125, 125, 1);
+}
+
+div#container.green {
+	background-color: rgba(170, 255, 170, 1);
+	color: rgba(60, 60, 60, 1);
+}
+
+div#container.yellow {
+	background-color: rgba(255, 255, 140, 1);
+}
+
+div#container.blue {
+	background-color: rgba(100, 160, 255, 1);
+}
+
+div[role="main"] {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: bold;
+}
+
+h1, h2, p {
+	margin-bottom: 2.25vh;
+}
+
+h1 {
+	font-size: 1.75vmax;
+}
+
+h1.title {
+	font-size: 3vmax;
+}
+
+h2 {
+	font-size: 1.6vmax;
+	margin-top: 4vh;
+}
+
+p {
+	font-size: 0.85vmax;
+}
+
+::selection {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+::-moz-selection {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.widget#changecolor p {
+	margin-bottom: 0.5vh;
+}
+
+.widget#changecolor {
+	position: fixed;
+	top: 0.5vh;
+	left: 0.5vh;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 0.15em solid rgba(0, 0, 0, 0.5);
+	border-radius: 0.2vmax;
+	padding: 0.5vh 0.75vw 0.5vh 0.75vw;
+}
+
+.widget#changecolor nav#colors {
+	width: 100%;
+	display: table;
+}
+
+.widget#changecolor nav#colors ul {
+	display: table-row;
+}
+
+.widget#changecolor nav#colors ul li {
+	display: table-cell;
+	width: auto;
+	text-align: center;
+}
+
+.widget#changecolor nav#colors ul li div.rectangle {
+	margin: 0 auto;
+	width: 0.75vmax;
+	height: 0.75vmax;
+	border: 0.1em solid rgba(40, 40, 40, 1);
+	cursor: pointer;
+}
+
+.widget#changecolor nav#colors ul li div.rectangle#white {
+	background-color: white;
+}
+
+.widget#changecolor nav#colors ul li div.rectangle#black {
+	background-color: rgba(20, 20, 20, 1);
+}
+
+.widget#changecolor nav#colors ul li div.rectangle#red {
+	background-color: rgba(200, 100, 100, 1);
+}
+
+.widget#changecolor nav#colors ul li div.rectangle#yellow {
+	background-color: rgba(220, 220, 120, 1);
+}
+
+.widget#changecolor nav#colors ul li div.rectangle#blue {
+	background-color: rgba(100, 150, 255, 1);
+}
+
+.widget#changecolor nav#colors ul li div.rectangle#green {
+	background-color: rgba(140, 200, 140, 1);
+}

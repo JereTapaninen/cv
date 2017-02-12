@@ -1,0 +1,39 @@
+DROPPABLE(tm) FOR WEB
+(C) Dreaming In Digital (MPJMT, OUKAFI) 2015 - 2016
+
+UPDATE LOG
+=========================================================
+
+1.8.2016
+Revision 0.20
+
+* Engine overhaul
+* Code improvement
+* Performance improvements
+
+29.8.2015
+Revision 0.160
+
+* Performance upgrades
+* UI Layout fixes
+* Name & slogan change
+* 4 engines now, instead of 2
+* Code refactoring
+* Bugfixing
+
+26.8.2015
+Revision 0.155
+
+* Huge performance upgrades
+* UI Layout fixes, color changes, general designing
+* Settings menu functional
+* Live song filtering (can be changed from the settings, on by default)
+* General improvements
+
+22.8.2015
+Revision 0.141
+
+* Performance upgrades (Spotific now searches every song found in the search results)
+* Layout fixing (Images now scale with the window size)
+* Timeout fixes (No more timeouts if results not found immediately)
+* UI additions (Texts etc.)

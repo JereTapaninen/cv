@@ -1,0 +1,9 @@
+c:\VS\Gensim\Gensim\Gensim\bin\Debug\Gensim.exe.config
+c:\VS\Gensim\Gensim\Gensim\bin\Debug\Gensim.exe
+c:\VS\Gensim\Gensim\Gensim\bin\Debug\Gensim.pdb
+c:\VS\Gensim\Gensim\Gensim\obj\Debug\Gensim.csprojResolveAssemblyReference.cache
+c:\VS\Gensim\Gensim\Gensim\obj\Debug\Gensim.Properties.Resources.resources
+c:\VS\Gensim\Gensim\Gensim\obj\Debug\Gensim.csproj.GenerateResource.Cache
+c:\VS\Gensim\Gensim\Gensim\obj\Debug\Gensim.exe
+c:\VS\Gensim\Gensim\Gensim\obj\Debug\Gensim.pdb
+c:\VS\Gensim\Gensim\Gensim\obj\Debug\Gensim.frmMain.resources

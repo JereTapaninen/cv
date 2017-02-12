@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+button {
+	outline: none;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+
+	background: url('../content/background.png') no-repeat center center/100% 100% fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+
+	flex: 1 0 auto;
+}
+
+.content footer {
+	flex: 0 1 8vh;
+
+	display: flex;
+	flex-direction: column;
+}
+/*
+.content #sidebar > * {
+	align-items: center;
+	justify-content: space-around;
+}*/
+
+#sidebar {
+	flex: 0 1 16vw;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#sidebar div#logo {
+	flex: 0 1 22vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#sidebar div#logo img {
+	width: 14vw;
+}
+
+#sidebar div#stats {
+	flex: 0 1 12vh;
+}
+
+#sidebar div#other {
+	flex: 1 0 auto;
+
+	padding: 0 0.75vw;
+
+	display: flex;
+	flex-direction: column;
+	align-items: space-around;
+	
+}
+
+#sidebar div#other > * {
+	margin: 0.5vh 0;
+}
+
+#sidebar div#goals {
+	flex: 0 1 24vh;
+}
+
+.content main {
+	flex: 1 0 auto;
+
+	padding: 1vmax 2vmax;
+
+	display: flex;
+	flex-direction: column;
+
+	background: url('../content/background2.png') no-repeat center center/100% 100% fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	border-left: 0.3vmax solid royalblue;
+	border-bottom: 0.3vmax solid royalblue;
+	border-bottom-left-radius: 1vmax;
+}
+
+.content main div {
+	display: flex;
+	flex: 1 0 auto;
+}
+
+.content main div .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+
+	width: 3.5vw;
+	height: 14vh;
+	background-color: royalblue;
+	border: 0.2vmax solid lightblue;
+	border-radius: 1vmax;
+
+	margin: 1vh 0.75vw;
+
+	font-weight: bold;
+	color: white;
+	font-size: 1.2vmax;
+}
+
+.content main div .card.active {
+	background-color: white;
+	color: black;
+}
+
+.content main div .card.generated {
+	background-color: gold;
+	color: white;
+}
+
+.content main div .card.active.generated {
+	background-color: rgb(255, 75, 0);
+	color: white;
+}
+
+footer {
+	flex: 0 1 8vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: flex-end;
+	width: 100%;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+footer ul li {
+	flex: 1;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#tuplaa {
+	width: 10vw;
+	height: 6vh;
+
+	background: url('../content/tuplaa_disabled.png') no-repeat center center/100% 100%; 
+	-webkit-background-size: scale-down;
+	-moz-background-size: scale-down;
+	-o-background-size: scale-down;
+	background-size: scale-down;
+	cursor: not-allowed;
+}
+
+#playBtn {
+	width: 10vw;
+	height: 6vh;
+
+	background: url('../content/pelaa.png') no-repeat center center/100% 100%; 
+	-webkit-background-size: scale-down;
+	-moz-background-size: scale-down;
+	-o-background-size: scale-down;
+	background-size: scale-down;
+	cursor: pointer;
+}
+
+#playBtn:hover {
+	background: url('../content/pelaa_hover.png') no-repeat center center/100% 100%;
+}
+
+.debug {
+	border: 1px solid red;
+}
+
+.inputbox {
+	display: flex;
+	flex-direction: column;
+
+	color: white;
+}
+
+.inputbox label {
+	font-weight: bold;
+}
+
+.inputbox > * {
+	margin: 0.25vh 0;
+}
+
+input[type="number"] {
+	background-color: rgba(75, 100, 200, 0.9);
+	border: 0.01vmax solid rgb(75, 100, 225);
+	padding: 0.4vh 0.2vw;
+	color: white;
+}
+
+input[type="button"] {
+	background-color: rgba(75, 125, 255, 1);
+	border: 0.01vmax solid rgb(75, 100, 225);
+	padding: 0.8vh 0.2vw;
+	width: 75%;
+	margin: 0 auto;
+	color: white;
+	cursor: pointer;
+}
+
+.statbox {
+	color: white;
+}
+
+.statbox .statboxtitle {
+	font-weight: bold;
+}
+
+.row {
+	display: flex;
+}
+
+#infoboard {
+	flex: 1 0 20vw !important;
+
+	background-color: black;
+	color: orange;
+
+	width: 100%;
+	height: 100%;
+
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0 1vw;
+	border: 0.2vmax solid rgb(200, 100, 75);
+	border-radius: 0.5vmax;
+
+	font-family: 'Orbitron', sans-serif !important;
+}

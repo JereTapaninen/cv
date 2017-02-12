@@ -1,0 +1,26 @@
+DROPPABLE INFORMATION
+
+Droppable is a tool that can be used to download PUBLIC DOMAIN songs, using any service where you can drag and drop songs. Simply drag the song from the service of your choice to the panel and watch the progress!
+The download should be ready in no less than a minute! In the best scenario, even in a couple of seconds!
+
+Droppable doesn't >download< songs using any service, it just grabs the song information from the outputted link.
+After that, Droppable searches for a MP3 download of the song from one of the available third-party services.
+If an appropriate download is found, and it works, the download is then shipped to the user, and the user gets the MP3 he or she wanted.
+
+PLEASE NOTE:
+WE, THE CREATORS, ARE NOT RESPONSIBLE FOR ANY ILLEGAL ACTIVITIES THAT OUR USERS DO.
+THEREFORE, IF ONE OF OUR USERS DECIDES TO DOWNLOAD ANY NON-PUBLIC DOMAIN SONG, WE ARE NOT TO BE HELD RESPONSIBLE.
+>> THE USER TAKES FULL RESPONSIBILITY FOR DOING SUCH THINGS. <<
+THIS TOOL IS >MEANT< FOR PUBLIC DOMAIN SONG DOWNLOADING ONLY!
+
+ALSO, PLEASE NOTE:
+IF THE COPYRIGHT OWNERS SO WANT TO, WE CAN BAN SINGLE IP ADDRESSES FROM USING OUR SERVICES.
+THERE, OF COURSE, HAS TO BE A GOOD REASON AS TO WHY WE SHOULD BAN THAT SINGLE IP ADDRESS.
+THE COPYRIGHT OWNERS CAN REPORT ANY SONG THEY WOULD LIKE TO NEVER SEE DOWNLOADED USING THIS SERVICE.
+EMAIL US AT dreamingindigitalyt@gmail.com AND TELL US YOUR ARTIST'S NAME, ALBUM NAME, SONG NAME AND THE REASON,
+AND WE WILL BLACKLIST THE SONG.
+
+Thank You.
+
+By using Droppable (when you download a song), you agree to these terms of service.
+These terms of service can change at any time, and we are not responsible for updating you about the changes.

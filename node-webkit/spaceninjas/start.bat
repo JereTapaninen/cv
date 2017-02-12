@@ -1,0 +1,1 @@
+"..\nw-sdk\nw.exe" "..\spaceninjas"
