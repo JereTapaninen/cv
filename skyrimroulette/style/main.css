@@ -1,0 +1,235 @@
+h1, h2, h3, h4, h5, h6, b, strong, label {
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 1.9vmax;
+}
+
+h2 {
+  font-size: 1.5vmax;
+}
+
+h3 {
+  font-size: 1.4vmax;
+}
+
+h4 {
+  font-size: 1.25vmax;
+}
+
+h5 {
+  font-size: 1.1vmax;
+}
+
+h6 {
+  font-size: 1vmax;
+}
+
+p, li {
+  font-size: 0.8vmax;
+}
+
+.small {
+  font-size: 0.7vmax;
+  font-weight: bold;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Cinzel', Segoe UI, sans-serif;
+}
+
+html {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(30, 30, 30);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  width: 70vw;
+
+  background-color: rgb(55, 55, 55);
+}
+
+body header {
+  flex: 0 1 10vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-shadow: 0.1vmax 0.1vmax 0.1vmax rgba(0, 0, 0, 0.75);
+}
+
+body header div .logo {
+  width: 2.25vmax;
+  height: 2.75vmax;
+  text-shadow: 0.1vmax 0.1vmax rgba(255, 255, 255, 0.75);
+}
+
+body #container {
+  flex: 1 0 auto;
+
+  display: none;
+  flex-direction: column;
+}
+
+body #container main {
+  flex: 1 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+
+  color: whitesmoke;
+}
+
+body #rolldicepls {
+  flex: 1 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: whitesmoke;
+}
+
+body footer {
+  flex: 0 1 15vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body footer div #dice {
+  width: 2.75vmax;
+  height: 2.75vmax;
+}
+
+div.rollbtn {
+  border: 0.1vmax solid rgba(0, 0, 0, 0.6);
+  border-radius: 1em;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.2vh 0.5vw;
+
+  font-size: 1vmax;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+div.rollbtn > * {
+  margin: 0 0.4vw;
+}
+
+div.rollbtn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+div.rollbtn:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 30%;
+
+  align-self: center;
+
+  
+  min-height: 6vh;
+
+  margin: 1vh 0;
+}
+
+.section#info {
+  justify-content: center;
+  align-items: center;
+
+  height: 16vh;
+}
+
+.section#dl {
+  justify-content: center;
+  align-items: center;
+}
+
+.section div {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.section div > * {
+  padding: 0.25vh 0;
+}
+
+.section#info div, .section#dl div {
+  justify-content: center;
+  align-items: center;
+}
+
+.section div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectiontitle {
+  font-size: 0.9vmax;
+  font-weight: bolder;
+}
+
+.sectionicon {
+  width: 6vmax;
+  height: 6vmax;
+}
+
+.smallheighticon {
+  max-height: 3vmax;
+}
+
+a {
+  color: rgb(0, 150, 255);
+  font-weight: bold;
+}
+
+a:visited {
+
+}
