@@ -1,0 +1,59 @@
+img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.shoppinglist-listitem {
+    cursor: pointer;
+
+    padding: 0 1vw;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    height: 6vh;
+
+    font-weight: bold;
+
+    background-color: rgb(240, 240, 240);
+}
+
+.shoppinglist-listitem:not(.active):hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.shoppinglist-listitem.active {
+    background-color: rgb(100, 200, 100);
+    border-bottom: 1px solid rgb(75, 175, 75);
+    box-sizing: border-box;
+}
+
+.shoppinglist-listitem.active > .shoppinglist-listitem-main > p:after {
+    content: "Picked up!";
+    color: rgb(25, 255, 25);
+}
+
+.shoppinglist-listitem-header {
+    flex: 0 1 2vw;
+    align-self: center;
+}
+
+.shoppinglist-listitem-main {
+    flex: 1 0 auto;
+    align-self: center;
+}
+
+.shoppinglist-listitem-footer {
+    flex: 0 1 2vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.shoppinglist-listitem-delete {
+    flex: 0 1 2vmax;
+    height: 2vmax;
+
+    align-self: center;
+}

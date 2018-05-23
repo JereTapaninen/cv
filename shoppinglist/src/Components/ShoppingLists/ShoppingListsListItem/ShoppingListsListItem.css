@@ -1,0 +1,38 @@
+.shoppinglists-listitem.active {
+    background-color: rgb(220, 220, 220);
+}
+
+.shoppinglists-listitem {
+    display: flex;
+    flex-direction: row;
+
+    cursor: pointer;
+
+    height: 6vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.shoppinglists-listitem:not(.active):hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.shoppinglists-listitem:not(.active):active {
+    background-color: rgb(230, 230, 230);
+}
+
+.shoppinglists-listitem > p {
+    flex: 1 0 auto;
+    align-self: center;
+
+    margin-left: 1vw;
+    font-weight: bold;
+}
+
+.shoppinglists-listitem > button {
+    flex: 0 1 2vmax;
+    height: 2vmax;
+
+    align-self: center;
+
+    margin-right: 1vw;
+}

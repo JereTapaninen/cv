@@ -1,0 +1,42 @@
+.shoppinglists-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    padding: 0 1vw 0 1vw;
+    margin: 0 0.25vw;
+}
+
+.shoppinglists-header {
+    flex: 0 1 6vh;
+}
+
+.shoppinglists-main {
+    flex: 1 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.shoppinglists-list {
+    flex: 1 0 auto;
+    max-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+}
+
+.shoppinglists-listitem {
+    
+}
+
+.shoppinglists-footer {
+    flex: 1 1 4vh;
+    max-height: 8vh;
+}
+
+.shoppinglists-button {
+    padding: 1vh 0.25vw;
+}
