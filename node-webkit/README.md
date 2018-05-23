@@ -1,0 +1,1 @@
+This place stores all my node-webkit projects, which I only have one of: spaceninjas. Space Ninjas was meant to be a JavaScript game to be played on a Raspberry Pi-based Arcade Machine. Not having any money, nor resources for an arcade machine though, only this very unfinished game was made.

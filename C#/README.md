@@ -1,0 +1,1 @@
+This place stores all the C# projects I've made so far.

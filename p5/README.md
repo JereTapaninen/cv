@@ -1,0 +1,1 @@
+This includes all my P5 projects, which only means "evolution". Evolution is just a genetic algorithm showcase, where the "rockets" will try to learn the right way to reach the goal, using genetic algorithm.

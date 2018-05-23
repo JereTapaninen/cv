@@ -1,0 +1,1 @@
+This is a semi-failed project of mine, trying to utilize the genetic algorithm to produce a civilization of dots. Though this is NOT finished, the code should still be a joy to read through.

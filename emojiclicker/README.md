@@ -1,0 +1,1 @@
+This is a copy of the game Cookie Clicker, but with emojis! Experience the fun of getting arthritis from clicking!
