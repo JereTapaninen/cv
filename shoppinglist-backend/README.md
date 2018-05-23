@@ -2,6 +2,8 @@
 
 This is the backend for the shoppinglist application.
 
+The shoppinglist application is an application I made when I was in the process of getting a job from BitFactor. This backend was made using a boilerplate for mongoDB.
+
 ## How to run this locally
 
 * You should first install MongoDB and run it locally (mongod.exe)
