@@ -1,7 +1,9 @@
-# CV
+# Please look here for my updated CV: [https://gitlab.com/JereTapaninen/cv](https://gitlab.com/JereTapaninen/cv)
+
+## CV
 Hello! Here will be (some of) my personal projects, that employers can take a look at. Feel free to take a look, who ever you are.
 
-## A quick rundown
+### A quick rundown
 Here's a quick rundown of all the projects in my CV:
 * [C#] Droppable - drag & drop a copyright-free song (its information) to download it.
 * [C#] Armed-Kart - a student project. The last game project at vocational college. Definitely NOT ready to be released.
