@@ -1,5 +1,7 @@
 # Please look here for my updated CV: [https://gitlab.com/JereTapaninen/cv](https://gitlab.com/JereTapaninen/cv)
 
+This page will still include my older projects - these are not included in the new CV as I feel they don't match my current proficiency.
+
 ## CV
 Hello! Here will be (some of) my personal projects, that employers can take a look at. Feel free to take a look, who ever you are.
 
